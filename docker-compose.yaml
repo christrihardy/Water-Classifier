@@ -1,0 +1,21 @@
+name: water_potability
+services:
+  frontend:
+    build: docker/frontend
+    image: frontend 
+    container_name: streamlit_frontend
+    depends_on:
+      - backend
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./:/home/
+  
+  backend:
+    build: docker/backend
+    image: backend
+    container_name: api_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/home/

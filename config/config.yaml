@@ -1,0 +1,92 @@
+# Path related
+dataset_path: data/raw/water_potability.csv
+dataset_cleaned_path: data/processed/raw_dataset.pkl
+train_set_path:
+- data/processed/x_train.pkl
+- data/processed/y_train.pkl
+valid_set_path:
+- data/processed/x_valid.pkl
+- data/processed/y_valid.pkl
+test_set_path:
+- data/processed/x_test.pkl
+- data/processed/y_test.pkl
+train_feng_set_path:
+- data/processed/x_train_feng.pkl
+- data/processed/y_train_feng.pkl
+valid_feng_set_path:
+- data/processed/x_valid_feng.pkl
+- data/processed/y_valid_feng.pkl
+test_feng_set_path:
+- data/processed/x_test_feng.pkl
+- data/processed/y_test_feng.pkl
+production_model_path: models/production_model.pkl
+training_log_path: log/training_log.json
+
+# Debug related
+print_debug: true
+
+# Columns by data type related
+
+float_columns:
+- ph
+- Hardness
+- Solids
+- Chloramines
+- Sulfate
+- Conductivity
+- Organic_carbon
+- Trihalomethanes
+- Turbidity
+
+int_columns:
+- Potability
+
+# Predictors and label related
+label: Potability
+predictors:
+- ph
+- Hardness
+- Solids
+- Chloramines
+- Sulfate
+- Conductivity
+- Organic_carbon
+- Trihalomethanes
+- Turbidity
+
+# Range of data related
+
+range_ph:
+- 0
+- 15
+range_hardness:
+- 0
+- 1000
+range_solids:
+- 0
+- 70000
+range_chloramines:
+- 0
+- 20
+range_sulfate:
+- 0
+- 65535
+range_conductivity:
+- 0
+- 1000
+range_org_carbon:
+- 0
+- 100
+range_trihalomethanes:
+- 0
+- 1000
+range_turbidity:
+- 0
+- 1000
+range_potability:
+- 0
+- 1
+
+# Splitting related
+test_size: 0.3
+valid_size: 0.5

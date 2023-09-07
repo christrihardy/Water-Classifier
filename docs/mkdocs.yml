@@ -1,0 +1,10 @@
+site_name: Water Potability Classifier
+nav:
+  - Home: index.md
+  - Project Description: description.md
+  - How to Use: usage.md
+  - Dataset: dataset.md
+  - Conclusion: conclusion.md
+
+theme: 
+  name: material

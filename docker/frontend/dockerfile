@@ -1,0 +1,12 @@
+FROM python:3.9.9-slim-buster
+
+WORKDIR /home
+
+COPY ./requirements.txt .
+
+RUN apt-get update && apt-get upgrade -y \
+    && pip install -r requirements.txt
+
+EXPOSE 8501
+
+CMD ["streamlit", "run", "src/water-frontend.py"]
