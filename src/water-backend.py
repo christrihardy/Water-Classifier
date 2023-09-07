@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from fastapi import Request
 import pickle
 import uvicorn
-import src.util as utils
+import util as utils
 
 config = utils.load_config()
 

@@ -2,11 +2,7 @@ import streamlit as st
 from PIL import Image
 import requests
 import joblib
-from sklearn.preprocessing import StandardScaler
 
-# header images
-# header_image = Image.open('water_potability/assets/water.jpg')
-# st.image(image)
 st.title("Water Potability Classifier")
 st.markdown('by: Chris Trihardy')
 st.divider()
@@ -45,7 +41,7 @@ with st.form("water-ap-form"):
         }
 
         # post request
-        response = requests.post("http://localhost:8000/predict", json = data)
+        response = requests.post("http://backend:8000/predict", json = data)
 
         # get response
         result = response.json()
