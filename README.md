@@ -2,7 +2,8 @@
 
 Water Classifier adalah program sederhana berbasis Python untuk klasifikasi water potability menggunakan machine learning
 
-MkDocs: [Link]()
+MkDocs: [Link](https://christrihardy.github.io/Water-Classifier/)
+
 Analisa: [Link](https://medium.com/@ctrihardy/water-potability-classifier-machine-learning-process-deployment-project-68dba4528618)
 
 ## Background
