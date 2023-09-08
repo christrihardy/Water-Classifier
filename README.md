@@ -19,16 +19,16 @@ Dataset diambil dari Kaggle, yaitu ["Water Quality"](https://www.kaggle.com/data
 
 Informasi fitur yang digunakan:
 
-- `**ph**`: Tingkat keasaman/kebasaan air
-- `**Hardness**`: Tingkat kandungan kalsium dan magnesium dalam air
-- `**Solids**`: Konsentrasi partikel padat terlarut dalam air
-- `**Chloramines**`: Kandungan disinfektan jenis chloramine dalam air
--`**Sulfate**`: Kandungan sulfat(SO4) dalam air
-- `**Conductivity**`: Tingkat keterhantaran listrik dalam air
-- `**Organic Carbon**`: Kandungan kontaminan organik dalam air
-- `**Trihalomethanes**`: Kandungan Trihalomethanes/THM dalam air. THM adalah hasil reaksi antara disinfektan dan zat organik dalam air
-- `**Turbidity**`: Tingkat kekeruhan air
-- `**Potability**`: Klasifikasi apakah air potable/bisa diminum (1) atau non-potable/tidak aman diminum (0)
+- `ph`: Tingkat keasaman/kebasaan air
+- `Hardness`: Tingkat kandungan kalsium dan magnesium dalam air
+- `Solids**`: Konsentrasi partikel padat terlarut dalam air
+- `Chloramines`: Kandungan disinfektan jenis chloramine dalam air
+- `Sulfate`: Kandungan sulfat(SO4) dalam air
+- `Conductivity`: Tingkat keterhantaran listrik dalam air
+- `Organic Carbon`: Kandungan kontaminan organik dalam air
+- `Trihalomethane`: Kandungan Trihalomethanes/THM dalam air. THM adalah hasil reaksi antara disinfektan dan zat organik dalam air
+- `Turbidity`: Tingkat kekeruhan air
+- `Potability`: Klasifikasi apakah air potable/bisa diminum (1) atau non-potable/tidak aman diminum (0)
 
 ## Project Architecture
 
@@ -61,36 +61,36 @@ Untuk menjalankan program, pertama Clone repository [Water Classifier](https://g
 
 Lalu, buka terminal, masuk ke direktori **'Water-Classifier'** dan jalankan command dibawah ini:
 
-- uvicorn src.water-backend:app --reload
-- streamlit run water-frontend.py
+- `uvicorn src.water-backend:app --reload`
+- `streamlit run water-frontend.py`
 
 Done! Anda bisa memilih untuk prediksi via API atau Streamlit. 
 
 **Note:**
 
-- **Ctrl + C** untuk mematikan service.
+- `Ctrl + C` untuk mematikan service.
 
 #### Running via Docker
 Dengan Docker, tidak perlu mengetik command setiap kali ingin mengaktifkan program. 
 
 Masuk ke direktori **'Water-Classifier'** dan jalankan command dibawah ini via terminal:
 
-- sudo docker compose build
-- sudo docker compose up -d
+- `sudo docker compose build`
+- `sudo docker compose up -d`
 
-Done! Anda bisa memilih untuk prediksi via API atau Streamlit. "**sudo docker compose down**" untuk mematikan service.
+Done! Anda bisa memilih untuk prediksi via API atau Streamlit.
 
 **Note:** 
 
 - Docker Desktop harus berjalan di background/dijalankan dulu sebelum menjalankan command diatas
-- **sudo docker compose down** untuk mematikan service.
+- `sudo docker compose down` untuk mematikan service.
 
 
 ### **2. Prediction via API Service**
 
 Jika ingin melakukan prediksi dengan API, buka url **(nama_host):8000** di aplikasi **Postman** 
 
-Contoh: buka API di local, gunakan localhost:8000 
+Contoh: buka API di local, gunakan `localhost:8000`
 
 ![Screenshot](docs/docs/img/api_format.png)
 ```
@@ -126,7 +126,7 @@ Jika anda ingin tampilan sistem yang lebih *user-friendly*, buka url **(nama_hos
 
 ### **4. Access the online service**
 
-Jika ingin mengakses prediction service dari penulis, buka link ini: **13.213.57.173:8501**
+Jika ingin mengakses prediction service dari penulis, buka link ini: `13.213.57.173:8501`
 
 ### **5. Retraining Model**
 
