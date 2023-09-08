@@ -4,7 +4,7 @@ import requests
 import joblib
 
 st.title("Water Potability Classifier")
-st.markdown('by: Chris Trihardy hahaha')
+st.markdown('by: Chris Trihardy')
 st.divider()
 st.subheader("Type the values and click 'Predict'")
 
