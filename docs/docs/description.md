@@ -32,7 +32,22 @@ Resiko false positive dan false negative cukup seimbang, oleh karena itu **F1-sc
 
 ## **3. Project Architecture**
 
+General Workflow
+
 ![Screenshot](img/FLOWCHART.png)
+
+Data Pipeline:
+
+![Screenshot](img/PIPELINE.png)
+
+Preprocessing
+
+![Screenshot](img/preprocessing.png)
+
+Modelling
+
+![Screenshot](img/model.png)
+
 
 ## **4. Expected Output**
 

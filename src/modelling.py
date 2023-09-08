@@ -162,6 +162,7 @@ def training_log_to_df(training_log):
 def get_best_model(training_log_df, list_of_model):
     model_object = None
 
+    # sort model with highest f1 score
     best_model_info = training_log_df.sort_values(["f1_avg", "training_time"], ascending = [False, True]).iloc[0]
     
     for configuration_data in list_of_model:
