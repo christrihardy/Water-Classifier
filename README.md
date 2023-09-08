@@ -2,8 +2,8 @@
 
 Water Classifier adalah program sederhana berbasis Python untuk klasifikasi water potability menggunakan machine learning
 
-MkDocs: [Link]
-Analisa: [Link]
+MkDocs: [Link]()
+Analisa: [Link](https://medium.com/@ctrihardy/water-potability-classifier-machine-learning-process-deployment-project-68dba4528618)
 
 ## Background
 Air adalah salah kebutuhan dasar bagi kelangsungan hidup seluruh makhluk hidup, termasuk manusia. Menurut WHO, sekitar 2 milyar orang masih menggunakan sumber air yang terkontaminasi. Oleh sebab itu, prediksi kualitas air yang akurat adalah salah satu esensi dari manajemen sumber daya air.
@@ -34,19 +34,19 @@ Informasi fitur yang digunakan:
 
 General Workflow
 
-![Screenshot](img/FLOWCHART.png)
+![Screenshot](docs/docs/img/FLOWCHART.png)
 
 Data Pipeline:
 
-![Screenshot](img/PIPELINE.png)
+![Screenshot](docs/docs/img/PIPELINE.png)
 
 Preprocessing
 
-![Screenshot](img/preprocessing.png)
+![Screenshot](docs/docs/img/preprocessing.png)
 
 Modelling
 
-![Screenshot](img/model.png)
+![Screenshot](docs/docs/img/model.png)
 
 ## How to Use
 
@@ -92,7 +92,20 @@ Jika ingin melakukan prediksi dengan API, buka url **(nama_host):8000** di aplik
 
 Contoh: buka API di local, gunakan localhost:8000 
 
-![Screenshot](img/api_format.png)
+![Screenshot](docs/docs/img/api_format.png)
+```
+ {
+           "ph": 6,
+            "Hardness": 2,
+            "Solids": 8081,
+            "Chloramines": 62,
+            "Sulfate": 372,
+            "Conductivity": 390,
+            "Organic_carbon": 15,
+            "Trihalomethanes": 63,
+            "Turbidity": 4
+        }
+```
 
 - Pilih 'Body' dan masukkan teks format variabel prediktor persis seperti di gambar untuk melakukan predict
 - Nilai angka prediktor bisa anda ubah 
@@ -102,12 +115,12 @@ Contoh: buka API di local, gunakan localhost:8000
 ### **3. Prediction via Streamlit**
 
 Jika anda ingin tampilan sistem yang lebih *user-friendly*, buka url **(nama_host):8501** di web browser anda
-![Screenshot](img/streamlit.png)
+![Screenshot](docs/docs/img/streamlit.png)
 
 - Masukkan nilai prediktor di kolom yang tertera
 - Klik tombol **Predict**
 
-![Screenshot](img/prediction.png)
+![Screenshot](docs/docs/img/prediction.png)
 
 - Hasil prediksi akan keluar, apakah air tersebut **Potable** atau **Non-potable**
 
